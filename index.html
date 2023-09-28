@@ -1,31 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teste</title>
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="phone-header">
-        <ul>
-          <li>11 1234-1234</li>
-          <li>11 1234-1234</li>
-        </ul>
-      </div>
-      <nav class="nav">
-        <div class="navbar">
-          <h2 class="logo">IMAGEM</h2>
-          <div class="menu">
-            <a href="">HOME</a>
-            <a href="">teste</a>
-            <a href="">CLIENTES</a>
-            <a href="">CONTATO</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teste</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+</head>
+
+<body>
+  <header>
+    <div class="phone-header">
+      <ul>
+        <li>11 1234-1234</li>
+        <li>11 1234-1234</li>
+      </ul>
+    </div>
+    <nav class="nav">
+      <div class="navbar">
+        <h2 class="logo">IMAGEM</h2>
+        <div class="menu">
+          <a href="">HOME</a>
+
+          <div class="dropdown">
+            <a href="#">EMPRESA</a>
+
+            <div class="dropdown-content">
+              <a href="#">SUBMENU 1</a>
+              <a href="#">SUBMENU 1</a>
+              <a href="#">SUBMENU 1</a>
+              <div class="submenu">
+                <a href="#">SUBMENU 1</a>
+                <div class="submenu-content">
+                  <a href="#">SUBMENU 2</a>
+                  <a href="#">SUBMENU 2</a>
+                  <a href="#">SUBMENU 2</a>
+                  <a href="#">SUBMENU 2</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="">CLIENTES</a>
+          <a href="">CONTATO</a>
           </ul>
         </div>
-      </nav>
-    </header>
-  </body>
+    </nav>
+  </header>
+
+  <main>
+    <section class="slider-container">
+      <div class="slider-content">
+        <div id="slider" class="nivoSlider">
+
+          <img src="img/light-gray-background.jpg" data-thumb="img/light-gray-background.jpg" alt="" />
+
+          <img src="img/gray-background.jpg" data-thumb="img/gray-background.jpg" alt="" />
+
+        </div>
+      </div>
+    </section>
+
+    <section class="text-container">
+      <div class="text-content">
+        <div class="text-content-details">
+          <h2>TESTE DE HTML E CSS</h2>
+          <p>Quesitos de avaliação:</p>
+          <ul>
+            <li>Organização do código (quanto mais limpo melhor);</li>
+            <li>Nível de detalhismo (quanto mais identico melhor);</li>
+            <li>Tempo de desenvolvimento (seja sincero ao enviar o tempo gasto);</li>
+          </ul>
+          <p>Obrigado e boa sorte!</p>
+        </div>
+        <img class="text-container-img" src="img/dark-blue-background.jpg" alt="">
+      </div>
+    </section>
+
+    <section class="highlights-container">
+      <div class="highlights-content">
+        <h2>BOXES DE DESTAQUE</h2>
+        <div class="cards">
+          <div class="card">
+            <img class="card-img" src="img/dark-blue-background.jpg" alt="">
+            <p>Um texto descritivo com link apenas</p>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <img class="card-img" src="img/dark-blue-background.jpg" alt="">
+            <p>Um texto descritivo com link apenas</p>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <img class="card-img" src="img/dark-blue-background.jpg" alt="">
+            <p>Um texto descritivo com link apenas</p>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <img class="card-img" src="img/dark-blue-background.jpg" alt="">
+            <p>Um texto descritivo com link apenas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Rodapé
+  </footer>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="nivo-slider/jquery.nivo.slider.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
