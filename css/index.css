@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* "reset" */
 * {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
 }
 
 /* header */
@@ -27,7 +31,7 @@
 }
 
 .phone-header ul li {
-  color: #F0FCFF;
+  color: #f0fcff;
 }
 
 /* header navbar */
@@ -58,7 +62,6 @@
   background: #020085;
 }
 
-
 .nav .navbar .menu {
   height: 90px;
   display: flex;
@@ -68,7 +71,7 @@
 }
 
 .menu a {
-  color: #B1B1B1;
+  color: #b1b1b1;
   font-weight: 500;
 }
 
@@ -109,12 +112,13 @@
   left: 100%;
 }
 
-.dropdown-content, .submenu-content {
+.dropdown-content,
+.submenu-content {
   text-align: center;
 }
 
 :is(.dropdown-content, .submenu-content) a {
-  color: #FFF;
+  color: #fff;
   padding: 5px 0px 5px 0px;
   display: block;
 }
@@ -126,7 +130,7 @@
 /* slider */
 
 .slider-container {
-  background: #D1D1D1;
+  background: #d1d1d1;
 }
 
 .slider-content {
@@ -156,7 +160,7 @@
   max-width: 894px;
   width: 100%;
   text-align: justify;
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .text-container .text-content {
@@ -178,4 +182,166 @@
 
 .text-container .text-content .text-content-details ul li {
   list-style-type: "• ";
+}
+
+/* highlights */
+
+.card-img {
+  max-width: 196px;
+  width: 100%;
+  max-height: 163px;
+}
+
+.highlights-container {
+  margin: 0 auto;
+  max-width: 894px;
+  width: 100%;
+  text-align: justify;
+  color: #b1b1b1;
+}
+
+.highlights-container .highlights-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 20px;
+}
+
+.highlights-content .cards {
+  display: flex;
+  gap: 28px;
+}
+
+.highlights-content .cards .card {
+  font-size: 12px;
+}
+
+.highlights-content .cards .card p {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+/* footer */
+
+footer {
+  background: #454545;
+  color: #b1b1b1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 117px;
+}
+
+footer nav .menu-rodape {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .text-container .text-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+
+  .text-container .text-content .text-content-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .text-container {
+    text-align: center;
+  }
+
+  .text-container .text-content .text-content-details ul li {
+    list-style: none;
+    padding: 2px;
+  }
+
+  .highlights-content {
+    text-align: center;
+  }
+
+  .highlights-content .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-img {
+    max-width: 100%;
+  }
+
+  footer {
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  footer nav .menu-rodape {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav .navbar .menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav .navbar .menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 980;
+    text-align: center;
+    background: #b1b1b1;
+    width: 80%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu.active a {
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 0;
+    text-decoration: none;
+    display: block;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  .menu-toggle.active {
+    background: transparent;
+    color: #020085;
+  }
 }

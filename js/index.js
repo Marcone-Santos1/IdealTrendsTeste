@@ -17,3 +17,10 @@ $(window).load(function () {
     randomStart: false,
   });
 });
+
+const menuButton = document.querySelector('.menu-toggle');
+const mainMenu = document.querySelector('.nav .navbar .menu');
+
+menuButton.addEventListener('click', () => {
+  mainMenu.classList.toggle('active');
+});
